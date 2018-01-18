@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="green">#83c362</color>
+    <color name="tv_Gray_light">#999999</color>
+    <color name="bg_Gray_top">#F8F8F8</color>
+    <color name="bg_Gray_light">#EEEEEE</color>
+    <color name="buttonRed">#f80479</color>
+    <color name="white">#FFFFFF</color>
+    <color name="province_line_border">#C7C7C7</color>
+    <color name="black">#000000</color>
+</resources>

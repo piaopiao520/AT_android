@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/gohome_main_back"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/back_two"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_vertical"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="宠物回家（请搜索关键字）"
+                android:gravity="center"
+                android:background="@drawable/home_shape"
+                android:layout_margin="5dp"
+                />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/search"
+                android:layout_gravity="center|right"
+                android:layout_margin="7dp"
+                />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc"/>
+        <ListView
+            android:id="@+id/gohome_main_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+</LinearLayout>
+    <ImageView
+        android:id="@+id/gohome_sent"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/notetwo"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="10dp"/>
+</FrameLayout>

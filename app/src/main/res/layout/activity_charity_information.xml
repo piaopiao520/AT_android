@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/info_back_to_charity"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/back_two"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="公益资讯"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_margin="5dp"
+                />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/news_lv"
+        android:dividerHeight="7dp"
+        android:divider="#dcdcdc"
+        >
+    </ListView>
+
+
+</LinearLayout>

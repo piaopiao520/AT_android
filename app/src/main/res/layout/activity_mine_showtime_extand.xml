@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/back_two"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="记录时光"
+                android:textSize="22sp"
+                android:gravity="center"
+                />
+
+            <ImageView
+                android:id="@+id/mine_showtime_ablum_up"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/caring"
+                android:layout_gravity="right"
+                android:layout_margin="7dp"
+                />
+        </FrameLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+        <EditText
+            android:id="@+id/mine_showtime_jilu_et"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:text="今天我吃了10斤狗粮，主人和他的小伙伴惊呆了。"
+            android:gravity="top"
+            android:textSize="18sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/mine_showtime_jilu_iv1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:src="@drawable/pet"
+                android:scaleType="fitXY"
+                android:padding="4dp"/>
+
+            <ImageView
+                android:id="@+id/mine_showtime_jilu_iv2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:src="@drawable/pet"
+                android:scaleType="fitXY"
+                android:padding="4dp"/>
+
+            <ImageView
+                android:id="@+id/mine_showtime_jilu_iv3"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:src="@drawable/pet"
+                android:scaleType="fitXY"
+                android:padding="4dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/mine_showtime_ablum"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end"
+        android:src="@drawable/pet"
+        android:layout_marginRight="10dp"/>
+
+
+</LinearLayout>

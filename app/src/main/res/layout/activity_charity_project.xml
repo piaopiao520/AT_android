@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/tv_charity_project_back"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/back_two"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:layout_width="385dp"
+                android:layout_height="match_parent"
+                android:text="公益项目"
+                android:textSize="22sp"
+                android:gravity="center"
+                />
+
+            <Button
+                android:id="@+id/tv_charity_project_issue"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="发起公益"
+                android:background="@color/buttonRed"
+                android:layout_gravity="right"
+                android:layout_margin="5dp"
+                android:textSize="18sp"
+                android:textColor="#ffffff"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/charity_project_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc"/>
+
+
+</LinearLayout>

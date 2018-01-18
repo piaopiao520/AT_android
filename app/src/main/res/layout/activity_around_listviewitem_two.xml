@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="horizontal">
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp">
+        <ImageView
+            android:id="@+id/around_listviewitem_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/petshop"
+            android:scaleType="fitXY"
+            android:layout_margin="10dp"/>
+
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/around_listviewitem_context"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3.5"
+
+                android:text="商品简介"
+                android:textSize="18sp"
+                android:paddingLeft="4dp"/>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:paddingLeft="4dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="￥"
+
+                    android:gravity="bottom"/>
+
+                <TextView
+                    android:id="@+id/around_listviewitem_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="10"
+                    android:textSize="18sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="5dp">
+                    <TextView
+                        android:id="@+id/around_listviewitem_quantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12"
+                        android:layout_marginRight="2dp"/>
+                    <ImageView
+                        android:id="@+id/around_listviewitem_sub_iv"
+                        android:layout_width="28dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/delete"
+                        android:scaleType="fitXY"/>
+                    <TextView
+                        android:id="@+id/around_listviewitem_amount"
+                        android:layout_width="28dp"
+                        android:layout_height="match_parent"
+                        android:text="0"
+                        android:textSize="22sp"
+                        android:gravity="center"/>
+                    <ImageView
+                        android:id="@+id/around_listviewitem_add_iv"
+                        android:layout_width="28dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add"
+                        android:scaleType="fitXY"/>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc"/>
+
+
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/time4">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        >
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="#40ffffff"
+        android:layout_margin="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+
+           android:src="@drawable/person"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/tv_UserId"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+           android:hint="账号"
+            android:textSize="20sp"
+            android:gravity="center|left"
+            android:background="#59ffffff"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:layout_margin="25dp">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+
+                android:src="@drawable/scret"
+                android:gravity="center"/>
+            <EditText
+                android:id="@+id/tv_UserPW"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:hint="密码"
+                android:textSize="20sp"
+                android:gravity="center|left"
+                android:background="#59ffffff"/>
+        </LinearLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/bt_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="登录"
+            android:textSize="22sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/login_bg"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="忘记密码"
+                android:textSize="22sp"
+                android:textColor="#ffffff"
+                android:layout_gravity="center|end"
+                android:layout_marginRight="10dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="注册"
+                android:textSize="22sp"
+                android:textColor="#ffffff"
+                android:background="#00000000"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/bt_regist" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

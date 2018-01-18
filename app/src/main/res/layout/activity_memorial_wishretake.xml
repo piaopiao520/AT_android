@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/redb"
+    android:id="@+id/wish_retake">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+<ImageView
+    android:id="@+id/memorial_wish_retake_back"
+    android:layout_width="50dp"
+    android:layout_height="wrap_content"
+    android:src="@drawable/backqute"
+    android:layout_margin="5dp"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="5dp"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="5dp"/>
+        <ImageView
+            android:id="@+id/memorial_wish_red"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/redbt"
+            android:layout_margin="5dp"/>
+        <ImageView
+            android:id="@+id/memorial_wish_yellow"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/yellowbt"
+            android:layout_margin="5dp"/>
+        <ImageView
+            android:id="@+id/memorial_wish_blue"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bluebt"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="vertical">
+        <view.RoundImageView
+            android:id="@+id/wish_retake_iv"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/pet"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:padding="10dp">
+        <EditText
+            android:id="@+id/wish_retake_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="请写下您所希望的寄语。。。"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/login_bg"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+        <Button
+            android:id="@+id/memorial_wish_retake_set"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/anniu"
+            android:text="寄挂"
+            android:textSize="25sp"
+            android:textColor="#ffffff"/>
+        </LinearLayout>
+</LinearLayout>
